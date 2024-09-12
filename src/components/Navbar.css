@@ -1,0 +1,43 @@
+/* components/Navbar.css */
+.custom-navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand-custom {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link-custom {
+    color: #f8f9fa;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-link-custom:hover {
+    color: #ffffff;
+    background-color: #495057;
+    border-radius: 4px;
+  }
+  
+  .nav-link-special {
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .nav-link-special:hover {
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid #ffffff; /* White border for toggler icon */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1taWQ9IjEwIiBzdHJva2Utb3BhY2l0eT0iLjEiIHN0cm9rZS1kYXNoYXJyYXk9IjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWNvcG93PSJyb3VuZCIgc3Ryb2tlLXN0eWxlPSJub25lIiBzdHJva2Utb3BhY2l0eT0ibm9uZSIvPjwvc3ZnPg==');
+  }
+  

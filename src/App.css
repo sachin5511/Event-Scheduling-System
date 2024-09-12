@@ -1,38 +1,326 @@
-.App {
+/* App.css */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+
+  /* Navbar.css */
+.custom-navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand-custom {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link-custom {
+  color: #f8f9fa;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #ffffff;
+  background-color: #495057;
+  border-radius: 4px;
+}
+
+.nav-link-special {
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.nav-link-special:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.navbar-toggler {
+  border: 1px solid #ffffff; 
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1taWQ9IjEwIiBzdHJva2Utb3BhY2l0eT0iLjEiIHN0cm9rZS1kYXNoYXJyYXk9IjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWNvcG93PSJyb3VuZCIgc3Ryb2tlLXN0eWxlPSJub25lIiBzdHJva2Utb3BhY2l0eT0ibm9uZSIvPjwvc3ZnPg==');
+}
+
+
+/* Login Page*/
+.login-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4CAF50;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Input Field */
+.login-container input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-container input[type="email"]:focus {
+  border-color: #2E7D32;
+}
+
+/* Button */
+.login-container button {
+  background-color: #4CAF50;
   color: white;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.login-container button:hover {
+  background-color: #2E7D32;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login-container {
+      padding: 20px;
+      max-width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .login-container h1 {
+      font-size: 20px;
+  }
+
+  .login-container button {
+      padding: 12px;
+  }
+}
+
+/* Container for Availability Page */
+.availability-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.availability-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Header */
+.availability-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+/* Input Fields */
+.availability-container input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.availability-container input:focus {
+  border-color: #2E7D32;
+}
+
+/* Button */
+.availability-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.availability-container button:hover {
+  background-color: #2E7D32;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .availability-container {
+      padding: 20px;
+      max-width: 90%;
+  }
+
+  .availability-container h1 {
+      font-size: 20px;
+  }
+
+  .availability-container button {
+      padding: 12px;
+  }
+}
+
+
+/* Admin Dashboard Container */
+/* SidebarContainer.css */
+
+.sidebar-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #f4f4f4;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.sidebar .user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.sidebar .user-info {
+  flex-grow: 1;
+  
+}
+
+.online_dot{
+  height: 8px;
+  width: 8px;
+  background-color: rgb(39, 152, 24);
+  border-radius: 50%;
+  margin: 15px 10px;
+
+}
+.sidebar .status {
+  color: green;
+  display: flex;
+  align-items: center;
+
+}
+
+.sidebar .search-box {
+  margin-bottom: 20px;
+
+}
+
+.sidebar .search-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .menu-item {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.sidebar .menu-item:hover {
+  background: #ddd;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar-container.open .sidebar {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .toggle-button {
+    display: none;
   }
 }

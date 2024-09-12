@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+import Availability from './components/Availability';
+// import AdminDashboard from './components/AdminDashboard';
+import NavigationBar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 import './App.css';
+import Dashboard from './pages/DashBoard/Dashborad';
+import 'remixicon/fonts/remixicon.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App: React.FC = () => {
+    return (
+        <Router>
+             <div className="d-flex flex-column min-vh-100">
+                <NavigationBar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/availability" element={<Availability />} />
+                    <Route path="/admin" element={<Dashboard/>} />
+                </Routes>
+            </div> 
+        </Router>
+    );
+};
 
 export default App;

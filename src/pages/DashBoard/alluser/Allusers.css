@@ -1,0 +1,122 @@
+/* Allusers.css */
+.allusers_container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+}
+
+/* Sidebar styling */
+.allusers_sidebar {
+    width: 24%;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.allusers_sidebar h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.allusers_sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.allusers_sidebar li {
+    margin-bottom: 10px;
+}
+
+.allusers_sidebar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.allusers_sidebar button:hover {
+    background-color: #2980b9;
+}
+
+/* Content area */
+.allusers_content {
+    width: 75%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.allusers_content h2 {
+    font-size: 1.75em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .allusers_container {
+        flex-direction: column;
+    }
+    
+    .allusers_sidebar, .allusers_content {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .allusers_sidebar {
+        margin-bottom: 20px;
+    }
+}
+
+/* DataTable styling overrides */
+.rdt_Table {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.rdt_TableHead {
+    background-color: #34495e;
+    
+    font-size: 1.1em;
+}
+
+.rdt_TableRow {
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+.rdt_TableRow:hover {
+    background-color: #ecf0f1;
+}
+
+.rdt_Pagination {
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+
+
